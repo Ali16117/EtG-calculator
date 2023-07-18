@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EtG Calculator - Calculate Ethyl Glucuronide Elimination Time Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+html">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="canonical" href="https://etgcalculator.online/">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="etg-container">
+        <h1 class="logo"><img src="img/etg calculator logo.png" alt="EtG Calculator" width="280"></h1>
+        <section>
+            <label for="etg-age">Please provide your age: </label>
+            <input type="number" id="etg-age" name="etg-age" min="18" max="120">
+        </section>
+
+        <section>
+            <label for="etg-amount">Please specify the level of alcohol consumption: </label>
+            <select id="etg-amount" name="etg-amount">
+                <option value="moderate">Moderate (a couple of drinks)</option>
+                <option value="heavy">Heavy (several drinks)</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="etg-day">What day did you have your last drink? </label>
+            <select id="etg-day" name="etg-day">
+                <option value="0">Sunday</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="etg-time">What time did you have your last drink? </label>
+            <input type="text" id="etg-time" name="etg-time">
+        </section>
+
+        <button id="etg-calculate">Calculate</button>
+        <div id="etg-result" class="etg-result"></div>
+        <p class="tips">
+            <strong>Disclaimer:</strong> It's important to note that results from an EtG calculator are estimates and can vary based on individual metabolic rates, overall health, and other factors.
+          </p>
+        <hr>
+        <h2>Definition</h2>
+    <p>
+        An Ethyl Glucuronide (EtG) calculator is a tool used to estimate the time it takes for EtG, a metabolite of alcohol, to be eliminated from the body. It considers factors such as age, amount of alcohol consumed, and the time and day of the last drink. EtG calculators are often used by individuals who need to abstain from alcohol consumption for health, legal, or occupational reasons, as the presence of EtG in the body can be detected in various tests, providing evidence of recent alcohol consumption.
+    </p>
+
+    <h2>Working of EtG Calculator</h2>
+    <p>
+        An EtG (Ethyl Glucuronide) calculator works by leveraging the known metabolic and elimination rates of EtG, a byproduct of alcohol metabolism. When a user inputs relevant information such as their age, the level of alcohol consumption, the day, and time of their last drink, the calculator processes these inputs to make an estimation.
+    </p>
+    <p>
+        The calculator determines an estimated elimination timeline based on these factors, showing when the body might have eliminated all traces of EtG.
+    </p>
+    <h3>Factors:</h3>
+    <ul>
+        <li>Age Factor: Depending on the user's age, a corresponding factor is assigned. Younger or older individuals may have different metabolic rates which impact the elimination of EtG.</li>
+        <li>Amount Factor: This is based on the level of alcohol consumption, with higher consumption leading to a larger amount of EtG that needs to be eliminated.</li>
+        <li>Time of Last Drink: This input is used as the starting point from which the EtG elimination time is calculated.</li>
+        <li>Day of Last Drink: Also used as a component of the starting point for the calculation.</li>
+    </ul>
+    <p>The result is given as an approximate time when the body should be free of detectable EtG.</p>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <h3>Is the EtG Calculator accurate?</h3>
+    <p>
+        The EtG Calculator provides a general estimate based on certain input parameters like age, level of alcohol consumption, and time of last drink. However, it's important to understand that actual elimination times for Ethyl Glucuronide (EtG) can vary based on a number of additional factors such as individual metabolism, body mass, state of hydration, and overall health condition. For precise and personalized advice, it is recommended to consult with a healthcare provider or a professional dealing with substance use disorders.
+    </p>
+
+    <h3>How much EtG is in a single drink?</h3>
+    <p>
+        EtG, or Ethyl Glucuronide, is not present in alcoholic drinks. Instead, it is a byproduct formed in the body when ethanol (alcohol) is metabolized. The amount of EtG produced and how long it stays in the system can vary significantly between individuals due to a multitude of factors such as the individual's metabolism, the amount of alcohol consumed, body mass, hydration levels, and overall health condition.
+    </p>
+
+    <h3>How long can EtG be detected in urine?</h3>
+    <p>
+        EtG can typically be detected in urine for up to 80 hours after the consumption of alcohol, but this can vary depending on individual factors such as metabolism, hydration levels, and the amount of alcohol consumed. Please note that this timeframe is an approximation, and actual detection times may vary.
+    </p>
+
+    <h3>Can I speed up the elimination of EtG from my body?</h3>
+    <p>
+        There are no guaranteed methods to speed up the elimination of EtG from the body. The body metabolizes alcohol at its own pace based on various factors including metabolism, liver health, and overall health condition. Staying well-hydrated, maintaining a healthy diet, and getting regular exercise can support overall health and potentially assist in the elimination process, but they will not drastically alter the timeframe.
+    </p>
+
+    <h3>Does the use of household products containing alcohol affect EtG levels?</h3>
+    <p>
+        Certain products like mouthwashes, hand sanitizers, and certain foods cooked with alcohol can contain enough ethanol to produce detectable levels of EtG. It's advised to avoid such products if you're due to take an EtG test and want to avoid false-positive results.
+    </p>
+
+    <h3>Can I pass an EtG test after drinking alcohol?</h3>
+    <p>
+        Passing an EtG test after drinking alcohol depends on many factors such as the amount of alcohol consumed, when it was consumed, individual metabolic rates, and the specific detection limit of the test. As a general rule, the more alcohol consumed and the closer to the test it was consumed, the more likely it will be detected. Remember that the EtG calculator is only a tool to estimate elimination times based on averages and may not accurately predict the outcome of an EtG test for every individual.
+    </p>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                &copy; Etg Calculator
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                    <!-- More links... -->
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+
+<script type="text/javascript">
+// Initialize Flatpickr
+flatpickr("#etg-time", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true,
+});
+
+var etgAge = document.getElementById("etg-age"),
+    etgAmount = document.getElementById("etg-amount"),
+    etgDay = document.getElementById("etg-day"),
+    etgTime = document.getElementById("etg-time"),
+    etgResult = document.getElementById("etg-result"),
+    button = document.getElementById("etg-calculate"),
+    today = new Date(),
+    daysWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+etgTime.value = (new Date).toISOString().substr(11, 5);
+etgAge.value = 30;
+
+var elements = [etgAge, etgAmount, etgDay, etgTime];
+
+elements.forEach(function(element) {
+    element.addEventListener("change", function() {
+        etgResult.classList.remove("show");
+        etgResult.classList.remove("fadein");
+        button.style.display = "block";
+    });
+});
+
+button.addEventListener("click", function() {
+    var e = etgTime.value.substr(0, 2),
+        t = etgTime.value.substr(3, 5);
+
+    var ageFactor = etgAge.value < 30 ? 0.9 : etgAge.value > 50 ? 1.1 : 1;
+    var amountFactor = etgAmount.value == "moderate" ? 65 : 85;
+    var etgEliminationHours = ageFactor * amountFactor;
+
+    var a = new Date(today.getFullYear(), today.getMonth(), today.getDate(), e, t, 0);
+    a.setDate(a.getDate() - (a.getDay() - etgDay.value));
+    a.setHours(a.getHours() + etgEliminationHours);
+
+    etgResult.innerHTML = "Based on the information provided, Ethyl Glucuronide (EtG) will likely be eliminated from your body in approximately " + etgEliminationHours.toFixed(1) + " hours.<br/>";
+    etgResult.innerHTML += "For more accurate results, I would recommend refraining from taking an EtG test before " + daysWeek[a.getDay()] + ", " + a.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute:'2-digit',
+        hour12: true
+    }) + ".";
+
+    etgResult.classList.add("show");
+    setTimeout(function() {
+        etgResult.classList.add("fadein");
+    }, 10);
+}, false);
+</script>
+</body>
+</html>
+
+
+

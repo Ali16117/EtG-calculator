@@ -1,0 +1,167 @@
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-top: 20px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+
+    .etg-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .etg-container h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .etg-container label {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .etg-container input, .etg-container select, .etg-container button {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .etg-container section {
+        background-color: #F9F9F9;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .etg-container button {
+        background-color: #337AB7;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 30px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        border-radius: 8px;
+    }
+
+    .etg-container button:hover {
+        background-color: #265A88;
+    }
+
+    .etg-result {
+        display: none;
+        color: #155724;
+        background: #d4edda;
+        border: solid 1px #c3e6cb;
+        padding: 20px;
+        margin: 20px 0 0;
+        visibility: visible;
+        opacity: 1;
+        border-radius: 8px;
+    }
+
+    .tips {
+        border: 1px solid #ccc;
+        font-size: 11px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .fadein {
+        transition: opacity 2s;
+        opacity: 1;
+    }
+    img {
+  max-width: 100%;
+  height: auto;
+    }
+
+    footer {
+    position: relative;
+    width: 100%;
+    background-color: #f2f2f2;  /* change as desired */
+    padding: 20px 0;  /* change as desired */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;  /* Change this to the maximum width you want */
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer div {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer nav {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #000; /* change as desired */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #888; /* change as desired */
+}
+
+.current-page {
+    font-weight: bold; 
+}
+
+    /* CSS media query for mobile devices */
+    @media screen and (max-width: 480px) {
+        .etg-container input, .etg-container select, .etg-container button, .etg-container label {
+            font-size: 18px;
+        }
+        .etg-container h1 {
+            font-size: 22px;
+        }
+        .etg-container button {
+            font-size: 25px;
+        }
+    }
+</style>
