@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BAC Calculator</title>
+    <meta name="description" content="Accurately assess your Blood Alcohol Content (BAC) with our user-friendly calculator – stay informed and make safer choices.">
+    <meta name="author" content="EtG Specialist">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+html">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="canonical" href="https://etgcalculator.online/bac-calculator.html">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <h1 class="logo"><img src="img/BAC Calculator.png" alt="BAC Calculator" width="280" height="120"></h1>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="https://etg-calculator.online">ETG Calculator</a></li>
+            <li><a href="https://etgcalculator.online/bac-calculator.html">BAC Calculator</a></li>
+        </ul>
+    </nav>
+        <div class="bac-container">
+            
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    
+            <label for="weight">Weight (in pounds):</label>
+            <input type="number" id="weight" min="0">
+    
+            <label for="drinks">Number of Drinks:</label>
+            <input type="number" id="drinks" min="0" max="12" value="0">
+    
+            <label for="hours">Hours Since First Drink:</label>
+            <input type="number" id="hours" min="0" value="0">
+    
+            <button onclick="calculateBAC()">Calculate BAC</button>
+    
+            <div id="result" class="bac-result"></div>
+        
+        <p class="tips">
+            <strong>Tips & Notes:</strong> <ul>
+                <li><strong>Accuracy:</strong> The BAC calculator provides a general estimate based on the inputs provided. Actual BAC can vary based on factors like metabolism, food intake, and medication.</li>
+                <li><strong>No Safe Limit:</strong> Even small amounts of alcohol can affect one's ability to drive and increase the risk of an accident.</li>
+                <li><strong>Consult a Professional:</strong> Always consult with a healthcare or addiction professional if you believe you might have a drinking problem.</li>
+                <li><strong>Legal Limits:</strong> Legal BAC limits vary by country and region. Always ensure you're below the legal limit before driving.</li>
+                <li><strong>Impairment:</strong> BAC is an indicator of alcohol concentration in the bloodstream. However, impairment can begin at levels below the legal limit.</li>
+                <li><strong>Time is the Only Cure:</strong> Only time will lower BAC. Coffee, cold showers, or other "sobering" methods do not speed up the process.</li>
+            </ul>  
+          </p>
+        <hr>
+        <h2>Definition</h2>
+<p>
+    A Blood Alcohol Concentration (BAC) calculator is a tool designed to estimate the concentration of alcohol in a person's bloodstream. This concentration is calculated based on various factors such as weight, gender, amount of alcohol consumed, and the duration of consumption. BAC calculators are crucial for individuals seeking to understand their limits, especially before driving or undertaking activities where impairment could lead to accidents or injuries.
+</p>
+
+<h2>Working of BAC Calculator</h2>
+<p>
+    The BAC calculator employs a formula taking into account the known absorption, distribution, and metabolism rates of alcohol in the human body. By entering specific information like weight, gender, the amount of alcohol consumed, and the time duration of consumption, the calculator provides an estimation of the BAC level.
+</p>
+<p>
+    The result indicates the approximate concentration of alcohol in the bloodstream, helping users gauge their level of impairment.
+</p>
+<h3>Factors:</h3>
+<ul>
+    <li><strong>Weight:</strong> Alcohol affects individuals differently based on their body weight. Generally, individuals with higher body weight may have a lower BAC for the same amount of alcohol consumed, compared to those with lower body weight.</li>
+    <li><strong>Gender:</strong> On average, females tend to metabolize alcohol differently than males, leading to variations in BAC even with the same alcohol consumption patterns.</li>
+    <li><strong>Amount of Alcohol Consumed:</strong> The more alcohol consumed, the higher the BAC will be.</li>
+    <li><strong>Time Duration:</strong> Consuming the same amount of alcohol over a longer period results in a lower BAC as the body has more time to metabolize the alcohol.</li>
+</ul>
+<p>The output gives an approximate BAC level, which can be used to make informed decisions.</p>
+
+<h2>Frequently Asked Questions (FAQs)</h2>
+<h3>Is the BAC Calculator accurate?</h3>
+<p>
+    While the BAC Calculator provides an estimate based on the inputs provided, it should not be solely relied upon for critical decisions like driving. Factors like metabolism, food intake, overall health, and medications can all influence BAC, making the actual concentration different from the estimated value. Always err on the side of caution and avoid activities that require full attention if you've consumed alcohol. For more in-depth information on BAC, you can refer to this <a href="https://www.utoledo.edu/studentaffairs/counseling/selfhelp/substanceuse/bac.html">source</a>.
+</p>
+
+<h3>What is the legal BAC limit for driving?</h3>
+<p>
+    Legal BAC limits vary by country and even by state or region within countries. Generally, many places have a limit of 0.08% BAC for non-commercial drivers, but it's crucial to be aware of local laws and regulations.
+</p>
+
+<h3>How long does it take for my BAC to return to 0% after drinking?</h3>
+<p>
+    The body metabolizes alcohol at a steady rate, approximately 0.015% BAC per hour. However, this rate can be influenced by various factors. If you know your peak BAC after drinking, you can estimate the time to reach 0% by dividing the peak BAC by 0.015.
+</p>
+
+<h3>Can food influence my BAC?</h3>
+<p>
+    Yes, consuming alcohol with food can slow the absorption of alcohol into the bloodstream, potentially leading to a lower peak BAC. However, it's essential to understand that food doesn't prevent alcohol from affecting one's faculties or decision-making abilities.
+</p>
+
+<h3>Can I speed up the reduction of my BAC?</h3>
+<p>
+    No reliable method can expedite the metabolism of alcohol in the bloodstream. Contrary to popular belief, things like coffee, cold showers, or exercise do not reduce BAC faster. Only time will lower BAC.
+</p>
+
+<h3>How does alcohol affect my driving abilities even at low BAC levels?</h3>
+<p>
+    Even at low BAC levels, alcohol can impair one's judgment, coordination, and reaction times. This impairment can increase the risk of accidents, as even a slight delay in reaction or a minor misjudgment can have serious consequences on the road.
+</p>
+
+    </div>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                &copy; Etg Calculator
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                    <!-- More links... -->
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+
+    <script>
+        // BAC Table based on weight, gender, and number of drinks
+ const bacTable = {
+     male: {
+         100: [0.038, 0.075, 0.113, 0.150, 0.188, 0.225, 0.263, 0.300, 0.338, 0.375, 0.413, 0.450],
+         120: [0.031, 0.063, 0.094, 0.125, 0.156, 0.188, 0.219, 0.250, 0.281, 0.313, 0.344, 0.375],
+         140: [0.027, 0.054, 0.080, 0.107, 0.134, 0.161, 0.188, 0.214, 0.241, 0.268, 0.295, 0.321],
+         160: [0.023, 0.047, 0.070, 0.094, 0.117, 0.141, 0.164, 0.188, 0.211, 0.234, 0.258, 0.281],
+         180: [0.021, 0.042, 0.063, 0.083, 0.104, 0.125, 0.146, 0.167, 0.188, 0.208, 0.229, 0.250],
+         200: [0.019, 0.038, 0.056, 0.075, 0.094, 0.113, 0.131, 0.150, 0.169, 0.188, 0.206, 0.225],
+         220: [0.017, 0.034, 0.051, 0.068, 0.085, 0.102, 0.119, 0.136, 0.153, 0.170, 0.188, 0.205],
+         240: [0.016, 0.031, 0.047, 0.063, 0.078, 0.094, 0.109, 0.125, 0.141, 0.156, 0.172, 0.188]
+     },
+     female: {
+         100: [0.047, 0.094, 0.141, 0.188, 0.235, 0.282, 0.329, 0.376, 0.423, 0.470, 0.517, 0.564],
+         120: [0.039, 0.078, 0.117, 0.155, 0.194, 0.233, 0.272, 0.311, 0.350, 0.389, 0.428, 0.467],
+         140: [0.034, 0.067, 0.101, 0.134, 0.168, 0.202, 0.235, 0.269, 0.303, 0.336, 0.370, 0.403],
+         160: [0.029, 0.058, 0.087, 0.116, 0.145, 0.174, 0.203, 0.232, 0.261, 0.290, 0.320, 0.348],
+         180: [0.026, 0.052, 0.078, 0.104, 0.130, 0.156, 0.182, 0.208, 0.234, 0.260, 0.286, 0.312],
+         200: [0.023, 0.047, 0.070, 0.094, 0.117, 0.141, 0.164, 0.188, 0.211, 0.234, 0.258, 0.281],
+         220: [0.021, 0.042, 0.063, 0.083, 0.104, 0.125, 0.146, 0.167, 0.188, 0.208, 0.229, 0.250],
+         240: [0.019, 0.038, 0.056, 0.075, 0.094, 0.113, 0.131, 0.150, 0.169, 0.188, 0.206, 0.225]
+     }
+ };
+ 
+ function calculateBAC() {
+     const gender = document.getElementById('gender').value;
+     const weight = parseInt(document.getElementById('weight').value, 10);
+     const drinks = parseInt(document.getElementById('drinks').value, 10);
+     const hours = parseFloat(document.getElementById('hours').value);
+ 
+     // Find the closest weight
+     let closestWeight = 100;
+     for (let w of Object.keys(bacTable[gender])) {
+         if (Math.abs(weight - closestWeight) > Math.abs(weight - w)) {
+             closestWeight = w;
+         }
+     }
+ 
+     let currentBAC = bacTable[gender][closestWeight][drinks] - (0.015 * hours);
+ 
+     if (currentBAC < 0) currentBAC = 0;  // BAC can't be negative
+ 
+     let message;
+     if (currentBAC < 0.03) {
+         message = "Normal behavior, no impairment";
+     } else if (currentBAC < 0.06) {
+         message = "Mild euphoria and impairment";
+     } else if (currentBAC < 0.09) {
+         message = "Euphoria, increased impairment";
+     } else if (currentBAC < 0.25) {
+         message = "Lethargy, confusion, possible blackout";
+     } else {
+         message = "High risk of injury, possible death";
+     }
+ 
+     const resultDiv = document.getElementById('result');
+     resultDiv.textContent = `Estimated BAC: ${currentBAC.toFixed(3)} - ${message}`;
+     resultDiv.classList.add('show', 'fadein'); // This will display the result with the associated styling
+ }
+ 
+ 
+     </script>
+</body>
+</html>
+
+
+

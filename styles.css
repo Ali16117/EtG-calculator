@@ -1,4 +1,4 @@
-<style>
+
     body {
         font-family: Arial, sans-serif;
             margin: 0;
@@ -163,4 +163,108 @@ footer ul li a:hover {
             font-size: 25px;
         }
     }
-</style>
+    .bac-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .bac-container label {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .bac-container input,
+    .bac-container select,
+    .bac-container button {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .bac-container button {
+        background-color: #337AB7;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 30px;
+        margin: 20px auto;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        border-radius: 8px;
+    }
+
+    .bac-container button:hover {
+        background-color: #265A88;
+    }
+
+    .bac-result {
+        display: none;
+        color: #155724;
+        background: #d4edda;
+        border: solid 1px #c3e6cb;
+        padding: 20px;
+        margin: 20px 0 0;
+        border-radius: 8px;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .fadein {
+        transition: opacity 2s;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 480px) {
+        .bac-container input,
+        .bac-container select,
+        .bac-container button,
+        .bac-container label {
+            font-size: 18px;
+        }
+
+        .bac-container button {
+            font-size: 25px;
+        }
+    }
+    .header-nav {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .header-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .header-nav li {
+        margin: 5px 10px;
+    }
+    
+    .header-nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px 16px;
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+        transition: color 0.3s;
+    }
+    
+    .header-nav a:hover {
+        color: #555;
+    }
+    
+    
