@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://etgcalculator.online/</loc>
   <lastmod>2023-07-18T10:21:23+00:00</lastmod>
@@ -22,6 +21,10 @@
   <lastmod>2023-07-18T10:21:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://etgcalculator.online/bac-calculator.html</loc>
+  <lastmod>2023-09-21T10:21:23+00:00</lastmod> <!-- Adjust the lastmod date as per your needs -->
+  <priority>0.80</priority>
+</url>
 
 </urlset>
